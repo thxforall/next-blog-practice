@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: #374151;
+  --background: #ffffff;
+  --accent: #3b82f6;
+  --code-bg: #f8fafc;
+  --muted: #6b7280;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+/* 프로즈 스타일링을 위한 추가 CSS */
+.prose {
+  max-width: none !important;
+}
+
+/* prose 컨테이너의 기본 너비 설정 */
+.prose.prose-lg {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.prose h1, 
+.prose h2, 
+.prose h3, 
+.prose h4 {
+  color: var(--foreground);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.prose h1 {
+  font-size: 2.25rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.prose h2 {
+  font-size: 1.875rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.prose h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.prose p {
+  margin-bottom: 1.5rem;
+  line-height: 1.75;
+  color: var(--foreground);
+}
+
+.prose ul,
+.prose ol {
+  margin: 1.5rem 0;
+  padding-left: 1.25rem;
+  color: var(--foreground);
+}
+
+.prose li {
+  margin: 0.75rem 0;
+}
+
+.prose blockquote {
+  border-left: 3px solid var(--accent);
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  color: var(--muted);
+  font-style: italic;
+  background-color: var(--code-bg);
+  border-radius: 0.25rem;
+}
+
+/* 코드 블록 스타일링 */
+.prose pre {
+  background-color: var(--code-bg) !important;
+  border-radius: 0.5rem !important;
+  padding: 1.25rem !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+/* 코드 하이라이팅 스타일 */
+.prose pre code {
+  color: var(--foreground) !important;
+}
+
+/* HTML 태그 색상 */
+.prose pre code .hljs-tag {
+  color: #60a5fa !important; /* 밝은 파란색 */
+}
+
+/* 태그 내 속성 이름 */
+.prose pre code .hljs-attr {
+  color: #34d399 !important; /* 밝은 초록색 */
+}
+
+/* 태그 내 속성 값 */
+.prose pre code .hljs-string {
+  color: #fbbf24 !important; /* 밝은 노란색 */
+}
+
+/* 주석 */
+.prose pre code .hljs-comment {
+  color: #9ca3af !important; /* 회색 */
+  font-style: italic !important;
+}
+
+/* 키워드 (const, function 등) */
+.prose pre code .hljs-keyword {
+  color: #f472b6 !important; /* 분홍색 */
+}
+
+/* 변수명 */
+.prose pre code .hljs-name {
+  color: #93c5fd !important; /* 하늘색 */
+}
+
+/* 숫자 */
+.prose pre code .hljs-number {
+  color: #f59e0b !important; /* 주황색 */
+}
+
+/* 함수명 */
+.prose pre code .hljs-function {
+  color: #60a5fa !important; /* 밝은 파란색 */
+}
+
+/* 불리언 값 */
+.prose pre code .hljs-literal {
+  color: #f472b6 !important; /* 분홍색 */
+}
+
+/* 인라인 코드 스타일링 */
+.prose :not(pre) > code {
+  background-color: var(--code-bg) !important;
+  padding: 0.2em 0.4em !important;
+  border-radius: 0.25rem !important;
+  font-size: 0.875em !important;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+}
+
+/* 스무스 스크롤 효과 추가 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 헤더 높이만큼 스크롤 위치 조정 */
+.scroll-mt-20 {
+  scroll-margin-top: 5rem;
+}
+
+/* 링크 스타일링 */
+.prose a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.prose a:hover {
+  border-bottom-color: var(--accent);
+} 
