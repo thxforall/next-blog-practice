@@ -1,6 +1,7 @@
 ---
 title: 'Variables'
 date: '2025-02-26'
+thumbnail: '/images/posts/variables.jpeg'
 ---
 
 ## Variables
@@ -88,7 +89,7 @@ incrementCount(); // 1 (no conflict with previous call)
 
 #### Hoisting
 
-> Hoisting is JavaScript’s behavior of moving declarations to the top of their scope. Understanding hoisting helps prevent bugs.
+> Hoisting is JavaScript's behavior of moving declarations to the top of their scope. Understanding hoisting helps prevent bugs.
 
 ```javascript
 // Bad

@@ -1,6 +1,7 @@
 ---
 title: 'What is JavaScript?'
 date: '2025-02-20'
+thumbnail: '/images/posts/whatisjavascript.webp'
 ---
 
 ## What is JavaScript?

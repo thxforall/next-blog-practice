@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { Post } from '@/lib/posts'
 
 export default function PostContent({ post }: { post: Post }) {
@@ -10,11 +11,23 @@ export default function PostContent({ post }: { post: Post }) {
   return (
     <article className="max-w-2xl mx-auto px-4 py-12">
       <div className="max-w-2xl mx-auto">
-        <header className="mb-12 text-center">
-          <h1 className="text-3xl font-semibold text-gray-800 mb-4">
+        <header className="mb-12">
+          {post.thumbnail && (
+            <div className="mb-8 overflow-hidden rounded-lg">
+              <Image
+                src={post.thumbnail}
+                alt={post.title}
+                width={800}
+                height={400}
+                className="w-full h-auto object-cover"
+                priority
+              />
+            </div>
+          )}
+          <h1 className="text-3xl font-semibold text-gray-800 mb-4 text-center">
             {post.title}
           </h1>
-          <time className="text-sm text-gray-500">
+          <time className="block text-sm text-gray-500 text-center">
             {post.date}
           </time>
         </header>

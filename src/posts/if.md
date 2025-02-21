@@ -1,6 +1,7 @@
 ---
 title: 'If'
 date: '2025-02-24'
+thumbnail: '/images/posts/if.jpeg'
 ---
 
 ## If
@@ -19,7 +20,7 @@ date: '2025-02-24'
 8. [Default Case](#default-case)
 9. [Explicit Operator](#explicit-operator)
 10. [Nullish Coalescing Operator](#nullish-coalescing-operator)
-11. [De Morgan’s Laws](#de-morgans-laws)
+11. [De Morgan's Laws](#de-morgans-laws)
 
 ---
 
@@ -368,8 +369,8 @@ const a = true || (false && console.log('This will not run'));
 const b = false && (true || console.log('This will not run'));
 ```
 
-- In the first expression, `true ||` short-circuits, so the rest of the expression isn’t evaluated.
-- In the second expression, `false &&` short-circuits, so the `console.log` doesn’t run.
+- In the first expression, `true ||` short-circuits, so the rest of the expression isn't evaluated.
+- In the second expression, `false &&` short-circuits, so the `console.log` doesn't run.
 
 **Summary**
 
@@ -393,4 +394,4 @@ const b = false && (true || console.log('This will not run'));
 
 #### Nullish Coalescing Operator
 
-#### De Morgan’s Laws
+#### De Morgan's Laws

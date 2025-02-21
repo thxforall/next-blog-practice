@@ -1,6 +1,7 @@
 ---
 title: 'Floating Point'
 date: '2025-02-23'
+thumbnail: '/images/posts/floatingnumber.jpeg'
 ---
 
 ### Floating Point in JavaScript

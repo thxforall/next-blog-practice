@@ -1,6 +1,7 @@
 ---
 title: 'Type'
 date: '2025-02-25'
+thumbnail: '/images/posts/type.jpeg'
 ---
 
 ## Type
@@ -115,7 +116,7 @@ console.log(typeof null); // Output: "object"
 
 #### Reduce eqeq
 
-> In JavaScript, the == operator (often called “loose equality” or eqeq) allows for type coercion, which means it tries to convert the values being compared to a common type before making the comparison. While this can sometimes be convenient, it can also lead to unexpected behavior and bugs. For this reason, it is often recommended to use === (strict equality) instead, which does not perform type casting and only returns true if both the value and type are the same.
+> In JavaScript, the == operator (often called "loose equality" or eqeq) allows for type coercion, which means it tries to convert the values being compared to a common type before making the comparison. While this can sometimes be convenient, it can also lead to unexpected behavior and bugs. For this reason, it is often recommended to use === (strict equality) instead, which does not perform type casting and only returns true if both the value and type are the same.
 
 > When using ==, JavaScript will 'automatically attempt to convert' the values to the same type before comparing them. This process is called type coercion or type casting. Here are some examples of how == behaves:
 
@@ -126,7 +127,7 @@ console.log(1 == '1'); // Output: true
 console.log(null == undefined); // Output: true
 ```
 
-> The === operator, known as “strict equality,” checks both the value and the type without performing any type casting. This leads to more predictable and reliable comparisons.
+> The === operator, known as "strict equality," checks both the value and the type without performing any type casting. This leads to more predictable and reliable comparisons.
 
 ```javascript
 console.log(0 === false); // Output: false
@@ -164,7 +165,7 @@ console.log(null + 1); // Output: 1 (null is coerced to 0)
 console.log(undefined + 1); // Output: NaN (undefined is coerced to NaN)
 ```
 
-> Explicit type casting involves manually converting a value from one type to another using JavaScript’s built-in functions.
+> Explicit type casting involves manually converting a value from one type to another using JavaScript's built-in functions.
 
 ```javascript
 let str = '123';
@@ -215,7 +216,7 @@ console.log(boolNonEmptyStr); // Output: true
 
 #### isNaN
 
-> In JavaScript, isNaN and Number.isNaN are used to check if a value is “Not-a-Number” (NaN). However, they behave differently, and understanding their differences is important for writing accurate code.
+> In JavaScript, isNaN and Number.isNaN are used to check if a value is "Not-a-Number" (NaN). However, they behave differently, and understanding their differences is important for writing accurate code.
 
 > The isNaN() function checks whether a value is NaN or can be coerced to NaN. If the value is not a number or cannot be converted to a number, it returns true.
 

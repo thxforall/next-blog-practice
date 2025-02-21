@@ -13,6 +13,7 @@ export interface Post {
   title: string
   date: string
   content?: string
+  thumbnail?: string
 }
 
 export async function getPostMetadata(): Promise<Post[]> {
@@ -29,6 +30,7 @@ export async function getPostMetadata(): Promise<Post[]> {
       slug,
       title: data.title,
       date: data.date,
+      thumbnail: data.thumbnail,
     }
   })
 
@@ -56,5 +58,6 @@ export async function getPost(slug: string): Promise<Post> {
     title: data.title,
     date: data.date,
     content: contentHtml,
+    thumbnail: data.thumbnail,
   }
 } 
