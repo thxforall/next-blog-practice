@@ -16,7 +16,7 @@ export default function Home() {
             href="/blog" 
             className="px-6 py-2 bg-accent text-white rounded-lg hover:opacity-90 transition-opacity"
           >
-            가이드 보기
+            글 보기
           </Link>
           <GitHubLink />
         </div>
